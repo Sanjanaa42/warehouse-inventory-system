@@ -91,6 +91,7 @@ Useful SQL queries to retrieve inventory insights:
   WHERE s.quantity < p.reorder_level;
 
 . Total stock per product
+` ```sql `
 SELECT p.product_name, SUM(s.quantity) AS total_stock
 FROM Stock s
 JOIN Products p ON s.product_id = p.product_id
