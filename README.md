@@ -99,6 +99,7 @@ JOIN Products p ON s.product_id = p.product_id
 GROUP BY p.product_name;
 
 . Warehouses holding a specific product:
+```
 SELECT w.warehouse_name, s.quantity
 FROM Stock s
 JOIN Warehouses w ON s.warehouse_id = w.warehouse_id
@@ -120,9 +121,8 @@ WHERE s.product_id = 3;
 ⚙️ Stored Procedure
  -> transfer_stock
  -> Transfers stock from one warehouse to another while validating quantity availability.
-
+```
 Parameters:
-
 -> IN product INT
 -> IN from_wh INT
 -> IN to_wh INT
