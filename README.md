@@ -118,9 +118,18 @@ WHERE s.product_id = 3;
 
 📁 Triggers defined in: 04_triggers/triggers.sql
 ```
-⚙️ Stored Procedure
- **` transfer_stock`**
- Transfers stock from one warehouse to another while validating quantity availability.
+### ⚙️ Stored Procedure
+
+**`transfer_stock`**
+
+Transfers stock from one warehouse to another while validating quantity availability.
+
+**Parameters:**
+
+- `IN product INT`  
+- `IN from_wh INT`  
+- `IN to_wh INT`  
+- `IN qty INT`
 
 
 Parameters:
