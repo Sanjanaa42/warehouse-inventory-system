@@ -122,7 +122,7 @@ WHERE s.product_id = 3;
  -> transfer_stock
  Transfers stock from one warehouse to another while validating quantity availability.
 
-```
+
 Parameters:
 -> IN product INT
 -> IN from_wh INT
