@@ -117,7 +117,7 @@ WHERE s.product_id = 3;
 . Prevents any stock from becoming negative.
 
 📁 Triggers defined in: 04_triggers/triggers.sql
-
+```
 ⚙️ Stored Procedure
  -> transfer_stock
  -> Transfers stock from one warehouse to another while validating quantity availability.
