@@ -130,13 +130,6 @@ Transfers stock from one warehouse to another while validating quantity availabi
 - `IN from_wh INT`  
 - `IN to_wh INT`  
 - `IN qty INT`
-
-
-Parameters:
--> IN product INT
--> IN from_wh INT
--> IN to_wh INT
--> IN qty INT
 ```
 
 
