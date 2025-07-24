@@ -96,8 +96,9 @@ SELECT p.product_name, SUM(s.quantity) AS total_stock
 FROM Stock s
 JOIN Products p ON s.product_id = p.product_id
 GROUP BY p.product_name;
+```
 
-.** Warehouses holding a specific product:**
+.Warehouses holding a specific product:
 SELECT w.warehouse_name, s.quantity
 FROM Stock s
 JOIN Warehouses w ON s.warehouse_id = w.warehouse_id
